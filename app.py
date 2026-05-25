@@ -6,9 +6,7 @@ from flask import Flask, render_template
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 # This explicitly tells Flask exactly where to find the static and templates folders
-app = Flask(__name__, 
-            static_folder=os.path.join(base_dir, 'static'),
-            template_folder=os.path.join(base_dir, 'templates'))
+app = Flask(__name__)
 
 MOOD_BOOSTERS = [
     {
